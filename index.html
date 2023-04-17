@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
+    <script language="javascript" type="text/javascript" src="./assets/script.js"></script>
     <title>GIT CHEAT SHEET</title>
 </head>
 <body>
@@ -41,7 +42,7 @@
                 <h4>GitHub for Windows</h4>
                 <p>htps://windows.github.com</p>
 
-                <h4>GitHub for Mac</h4>
+                <h4>  GitHub for Mac </h4>
                 <p>htps://mac.github.com</p>
 
                 <h4>For Linux and Solaris platforms, the latest release is available on
@@ -54,18 +55,18 @@
                     <h3>SETUP</h3>
                     <p>Configuring user information used across all local repositories</p>
 
-                    <div class="git-cmd">
-                        <h4>git config --global user.name “[firstname lastname]”</h4>        
+                    <div class="git-cmd" onclick="copyText(this)">
+                        <h4  class="copyText">git config --global user.name “[firstname lastname]”</h4>        
                         <p>set a name that is identifiable for credit when review version history</p>
                     </div>
 
-                    <div class="git-cmd">
-                        <h4>git config --global user.email “[valid-email]”</h4>
+                    <div class="git-cmd" onclick="copyText(this)">
+                        <h4  class="copyText">git config --global user.email “[valid-email]”</h4>
                         <p>set an email address that will be associated with each history marker</p>
                     </div>
 
-                    <div class="git-cmd">
-                        <h4>git config --global color.ui auto</h4>
+                    <div class="git-cmd" onclick="copyText(this)">
+                        <h4  class="copyText">git config --global color.ui auto</h4>
                         <p>set automatic command line coloring for Git for easy reviewing</p>
                     </div>
 
@@ -76,13 +77,13 @@
                     <h3>SETUP & INIT</h3>
                     <p>Configuring user information, initializing and cloning repositories</p>
 
-                        <div class="git-cmd">
-                            <h4>git init</h4>
+                        <div class="git-cmd" onclick="copyText(this)">
+                            <h4  class="copyText">git init</h4>
                             <p>initialize an existing directory as a Git repository</p>
                         </div>
 
-                        <div class="git-cmd">
-                            <h4>git clone [url]</h4>
+                        <div class="git-cmd" onclick="copyText(this)">
+                            <h4  class="copyText">git clone [url]</h4>
                             <p>retrieve an entire repository from a hosted location via URL</p>
                         </div>
 
@@ -90,47 +91,48 @@
                 </article>
 
             </section>
+
             <section id="stageandsnapshot">
                 <article>
                     <h3>STAGE & SNAPSHOT</h3>
                     <p>Working with snapshots and the Git staging area</p>
 
-                    <div class="git-cmd"> 
-                        <h4>git status</h4>
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git status</h4>
                         <p>show modified files in working directory, staged for your next commit
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git add [file]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git add [file]
                         </h4>
                         <p>add a file as it looks now to your next commit (stage)
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git reset [file]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git reset [file]
                         </h4>
                         <p>unstage a file while retaining the changes in working directory
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git diff
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git diff
                         </h4>
                         <p>diff of what is changed but not staged
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git diff --staged
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git diff --staged
                         </h4>
                         <p>diff of what is staged but not yet commited
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git commit -m “[descriptive message]”
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git commit -m “[descriptive message]”
                         </h4>
                         <p>commit your staged content as a new commit snapshot
                         </p>
@@ -146,70 +148,71 @@
                     <p>Isolating work in branches, changing context, and integrating changes
                     </p>
 
-                    <div class="git-cmd"> 
-                        <h4>git branch
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git branch
                         </h4>
                         <p>list your branches. a * will appear next to the currently active branch
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git branch [branch-name]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git branch [branch-name]
                         </h4>
                         <p>create a new branch at the current commit
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git checkout
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git checkout
                         </h4>
                         <p>switch to another branch and check it out into your working directory
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git merge [branch]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git merge [branch]
                         </h4>
                         <p>merge the specified branch’s history into the current one
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git log
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git log
                         </h4>
                         <p>show all commits in the current branch’s history
                         </p>
                     </div>
                 </article>
             </section>
+
             <section id="inspectandcompare">
                 <article>
                     <h3>INSPECT & COMPARE</h3>
                     <p>Examining logs, diffs and object information
                     </p>
 
-                    <div class="git-cmd"> 
-                        <h4>git log
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git log
                         </h4>
                         <p>show the commit history for the currently active branch
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git log branchB..branchA
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git log branchB..branchA
                         </h4>
                         <p>show the commits on branchA that are not on branchB
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git log --follow [file]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git log --follow [file]
                         </h4>
                         <p>show the commits that changed file, even across renames
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git diff branchB...branchA
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git diff branchB...branchA
                         </h4>
                         <p>show the diff of what is in branchA that is not in branchB
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git show [SHA]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git show [SHA]
                         </h4>
                         <p>show any object in Git in human-readable format
                         </p>
@@ -220,22 +223,22 @@
                     <h3>TRACKING PATH CHANGES</h3>
                     <p>Versioning file removes and path changes</p>
 
-                    <div class="git-cmd"> 
-                        <h4>git rm [file]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git rm [file]
                         </h4>
                         <p>delete the file from project and stage the removal for commit
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git mv [existing-path] [new-path]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git mv [existing-path] [new-path]
                         </h4>
                         <p>change an existing file path and stage the move
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git log --stat -M
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git log --stat -M
                         </h4>
                         <p>show all commit logs with indication of any paths that moved TEMPORARY COMMITS
                         </p>
@@ -247,8 +250,8 @@
                     <p>Preventing unintentional staging or commiting of files</p>
 
 
-                    <div class="git-cmd"> 
-                        <h4>logs/
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">logs/
                             *.notes
                             pattern*/
                         </h4>
@@ -256,8 +259,8 @@
                             matches or wildcard globs.
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git config --global core.excludesfile [file]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git config --global core.excludesfile [file]
                         </h4>
                         <p>system wide ignore patern for all local repositories
                         </p>
@@ -270,32 +273,32 @@
                     <h3>SHARE & UPDATE</h3>
                     <p>Retrieving updates from another repository and updating local repos</p>
 
-                    <div class="git-cmd"> 
-                        <h4>git remote add [alias] [url]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git remote add [alias] [url]
                         </h4>
                         <p>add a git URL as an alias
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git fetch [alias]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git fetch [alias]
                         </h4>
                         <p>fetch down all the branches from that Git remote
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git merge [alias]/[branch]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git merge [alias]/[branch]
                         </h4>
                         <p>merge a remote branch into your current branch to bring it up to date
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git push [alias] [branch]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git push [alias] [branch]
                         </h4>
                         <p>Transmit local branch commits to the remote repository branch
                         </p>
                     </div>
-                    <div class="git-cmd"> 
-                        <h4>git pull
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git pull
                         </h4>
                         <p>fetch and merge any commits from the tracking remote branch
                         </p>
@@ -307,15 +310,15 @@
                     <h3>REWRTITE HISTORY</h3>
                     <p>Rewriting branches, updating commits and clearing history</p>
 
-                    <div class="git-cmd"> 
-                        <h4>git rebase [branch]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git rebase [branch]
                         </h4>
                         <p>apply any commits of current branch ahead of specified one
                         </p>
                     </div>
 
-                    <div class="git-cmd"> 
-                        <h4>git reset --hard [commit]
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git reset --hard [commit]
                         </h4>
                         <p>clear staging area, rewrite working tree from specified commit
                         </p>
@@ -328,23 +331,23 @@
                 <article>
                     <h3>TEMPORARY COMMITS</h3>
                     <p>Temporarily store modified, tracked files in order to change branches</p>
-                    <div class="git-cmd"> 
-                        <h4>git stash
+                    <div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git stash
                         </h4>
                         <p>Save modified and staged changes
                         </p>
-                    </div><div class="git-cmd"> 
-                        <h4>git stash list
+                    </div><div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git stash list
                         </h4>
                         <p>list stack-order of stashed file changes
                         </p>
-                    </div><div class="git-cmd"> 
-                        <h4>git stash pop
+                    </div><div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git stash pop
                         </h4>
                         <p>write working from top of stash stack
                         </p>
-                    </div><div class="git-cmd"> 
-                        <h4>git stash drop
+                    </div><div class="git-cmd" onclick="copyText(this)"> 
+                        <h4  class="copyText">git stash drop
                         </h4>
                         <p>discard the changes from top of stash stack
                         </p>
@@ -353,6 +356,10 @@
             </section>
 
 
+
+            <div id="copyInfo">
+                <h6>COPIED!</h6>
+            </div>
 
         </main>
 
